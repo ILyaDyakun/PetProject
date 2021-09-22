@@ -1,6 +1,11 @@
-<mat-form-field>
-    <mat-label>{{ 'LANGUAGES.TITLE' | translate }}</mat-label>
-    <mat-select [value]="selectedLanguage" (selectionChange)="languageChange($event)">
-        <mat-option *ngFor="let option of languages" [value]="option.id">{{option.title}}</mat-option> 
-    </mat-select>   
-</mat-form-field>
+<div class="container">
+    <div>
+        <h2>My Project</h2>
+    </div>
+    <mat-form-field class="languages">
+        <mat-label>{{ 'LANGUAGES.TITLE' | translate }}</mat-label>
+        <mat-select class="select-lang" [value]="selectedLanguage" (selectionChange)="languageChange($event)">
+            <mat-option *ngFor="let option of languages" [value]="option.id">{{option.title}}</mat-option> 
+        </mat-select>   
+    </mat-form-field>
+</div>

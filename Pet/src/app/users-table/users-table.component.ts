@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../services/users.service';
 import { User } from './users.model';
-import { finalize } from 'rxjs/operators';
+import { finalize, map } from 'rxjs/operators';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatTableDataSource } from '@angular/material/table';
 
@@ -17,7 +17,10 @@ export class UsersTableComponent implements OnInit {
   public columns: string[] = ['name', 'email', 'username', 'phone', 'website']; 
   public isLoadingResults: boolean = false;
   constructor(private usersService: UsersService, private router: Router, private route: ActivatedRoute) { }
- 
+  public pageChanged(): void{
+    this.updateUsers();
+  }
+
   ngOnInit(): void {
     this.updateUsers();
   }
@@ -28,16 +31,15 @@ export class UsersTableComponent implements OnInit {
   public selectRow(row: User):void{
     this.router.navigate(['features', row.id], { relativeTo: this.route })
   }
-  public onTableScroll(event: Event) {
-    // const tableViewHeight = event.target.offsetHeight 
-    // const tableScrollHeight = event.target.scrollHeight 
-    // const scrollLocation = event.target.scrollTop; 
+  public onTableScroll(event: any) {
+    const tableViewHeight = event.target.offsetHeight 
+    const tableScrollHeight = event.target.scrollHeight 
+    const scrollLocation = event.target.scrollTop; 
     
-    // const limit = tableScrollHeight - tableViewHeight;    
-    // if (scrollLocation > limit) {
-    //   this.updateUsers();
-    // }
-    console.log(event);
+    const limit = tableScrollHeight - tableViewHeight;    
+    if (scrollLocation > limit) {
+      this.updateUsers();
+    }
   }
   private updateUsers(): void {
     this.isLoadingResults = true;

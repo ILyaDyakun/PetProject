@@ -1,11 +1,12 @@
 table {
-    width: 100%;
+  width: 100%;
 }
 .container {
-    position: relative;
+  position: relative;
+  padding: 25px;
 }
 .loader {
-    position: absolute;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 56px;
@@ -17,16 +18,27 @@ table {
   justify-content: center;
 }
 
+.search {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(185, 23, 158);
+  border: 2px double grey;
+  padding: 10px;
+}
 
 .table-container {
-    display: flex;
-    flex-direction: column;
-    max-height: 300px;
-    min-width: 300px;
-  }
-  
-  .users-table {
-    overflow: auto;
-    max-height: 300px;
-  }
-  
+  border: 7px double rgba(4,15,46,0.88);
+}
+
+
+// .table-container {
+//   display: flex;
+//   flex-direction: column;
+//   max-height: 300px;
+//   min-width: 300px;
+// }
+
+// .users-table {
+//   overflow: auto;
+//   max-height: 300px;
+// }
