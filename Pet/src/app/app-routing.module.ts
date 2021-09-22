@@ -9,7 +9,7 @@ const routes: Routes = [
     component: UsersTableComponent,
   },
   {
-    path: 'features/:id',
+    path: 'features/:id/:username',
     component: UserComponent
   },
   {

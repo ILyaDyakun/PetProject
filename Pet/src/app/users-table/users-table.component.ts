@@ -29,15 +29,12 @@ export class UsersTableComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
   public selectRow(row: User):void{
-    this.router.navigate(['features', row.id], { relativeTo: this.route })
+    this.router.navigate(['features', row.id, row.username], { relativeTo: this.route })
   }
   public onTableScroll(event: any) {
-    const tableViewHeight = event.target.offsetHeight 
-    const tableScrollHeight = event.target.scrollHeight 
-    const scrollLocation = event.target.scrollTop; 
-    
-    const limit = tableScrollHeight - tableViewHeight;    
-    if (scrollLocation > limit) {
+    const scrollFromBottom = event.target.scrollHeight - event.target.offsetHeight - event.target.scrollTop;
+
+    if (scrollFromBottom <= 0) {
       this.updateUsers();
     }
   }
