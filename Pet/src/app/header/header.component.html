@@ -1,6 +1,6 @@
-<div class="container">
+<mat-toolbar class="container" color="primary">
     <div>
-        <h2>My Project</h2>
+        <h2>{{ 'HEADER.TITLE' | translate}}</h2>
     </div>
     <mat-form-field class="languages">
         <mat-label>{{ 'LANGUAGES.TITLE' | translate }}</mat-label>
@@ -8,4 +8,4 @@
             <mat-option *ngFor="let option of languages" [value]="option.id">{{option.title}}</mat-option> 
         </mat-select>   
     </mat-form-field>
-</div>
+</mat-toolbar>

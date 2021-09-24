@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
 import { MatSelectModule } from '@angular/material/select';
-import { MissingTranslationHandler, TranslateCompiler, TranslateLoader, TranslateModule, TranslateParser } from '@ngx-translate/core';
+import { TranslateModule } from '@ngx-translate/core';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 
 
@@ -15,7 +16,8 @@ import { MissingTranslationHandler, TranslateCompiler, TranslateLoader, Translat
   imports: [
     CommonModule,
     MatSelectModule,
-    TranslateModule.forChild()
+    TranslateModule.forChild(),
+    MatToolbarModule
   ]
 })
 export class HeaderModule { }

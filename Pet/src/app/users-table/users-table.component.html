@@ -1,6 +1,6 @@
 <div class="container">
   <mat-form-field appearance="standard">
-    <mat-label class="search">Search</mat-label>
+    <mat-label class="search">{{ 'TABLE.SEARCH' | translate }}</mat-label>
     <input class="field-search" matInput (keyup)="applyFilter($event)" #input />
   </mat-form-field>
 
@@ -16,27 +16,27 @@
         class="users-table"
       >
         <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef>Name</th>
+          <th mat-header-cell *matHeaderCellDef class="name">{{ 'TABLE.NAME' | translate }}</th>
           <td mat-cell *matCellDef="let user">{{ user.name }}</td>
         </ng-container>
 
         <ng-container matColumnDef="email">
-          <th mat-header-cell *matHeaderCellDef>Email</th>
+          <th mat-header-cell *matHeaderCellDef class="email">{{ 'TABLE.EMAIL' | translate }}</th>
           <td mat-cell *matCellDef="let user">{{ user.email }}</td>
         </ng-container>
 
         <ng-container matColumnDef="username">
-          <th mat-header-cell *matHeaderCellDef>Username</th>
+          <th mat-header-cell *matHeaderCellDef class="username">{{ 'TABLE.USERNAME' | translate }}</th>
           <td mat-cell *matCellDef="let user">{{ user.username }}</td>
         </ng-container>
 
         <ng-container matColumnDef="phone">
-          <th mat-header-cell *matHeaderCellDef>Phone</th>
+          <th mat-header-cell *matHeaderCellDef class="phone">{{ 'TABLE.PHONE' | translate }}</th>
           <td mat-cell *matCellDef="let user">{{ user.phone }}</td>
         </ng-container>
 
         <ng-container matColumnDef="website">
-          <th mat-header-cell *matHeaderCellDef>Website</th>
+          <th mat-header-cell *matHeaderCellDef class="website">{{ 'TABLE.WEBSITE' | translate }}</th>
           <td mat-cell *matCellDef="let user">{{ user.website }}</td>
         </ng-container>
 

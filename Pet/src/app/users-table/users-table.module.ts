@@ -6,6 +6,7 @@ import { UsersTableComponent } from './users-table.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MatInputModule } from '@angular/material/input';
     HttpClientModule,
     MatProgressSpinnerModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    TranslateModule.forChild()
   ],
   exports: [UsersTableComponent]
 })

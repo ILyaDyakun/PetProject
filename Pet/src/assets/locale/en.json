@@ -1,7 +1,16 @@
 {
-	"COMMON": {
-		"HEADER": "Ngx Translate Application Usage in Angular"
+	"HEADER": {
+		"TITLE": "My Project"
 	},
+	"TABLE": {
+		"SEARCH": "Search",
+		"NAME": "Name",
+		"EMAIL": "Email", 
+		"USERNAME": "Username", 
+		"PHONE": "Phone", 
+		"WEBSITE": "Website"
+	},
+	
 	"LANGUAGES": {
 		"EN": "English",
 		"UA": "Ukrainian",

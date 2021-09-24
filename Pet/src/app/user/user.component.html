@@ -1,20 +1,29 @@
-<a [routerLink]="['']">Back to Users List</a>
-<ul>
-    <li>name: {{user.name}}</li>
-    <li>email: {{user.email}}</li>
-    <li>address: <ul>
-        <li>street: {{user.address.street}}</li>
-        <li>suite: {{user.address.suite}}</li>
-        <li>city: {{user.address.city}}</li>
-        <li>zipcode: {{user.address.zipcode}}</li>
-    </ul></li>
-    <li>>phone: {{user.phone}}</li>
-    <li>website: {{user.website}}</li>
-    <li>company: <ul>
-        <li>name: {{user.company.name}}</li>
-        <li>catchPhrase: {{user.company.catchPhrase}}</li>
-    </ul></li>
+<a mat-raised-button [routerLink]="['']" color="primary">Back to Users List</a>
+<ul class="user-list">
+  <li>name: {{ user.name }}</li>
+  <li>email: {{ user.email }}</li>
+  <li>
+    address:
+    <ul>
+      <li>street: {{ user.address.street }}</li>
+      <li>suite: {{ user.address.suite }}</li>
+      <li>city: {{ user.address.city }}</li>
+      <li>zipcode: {{ user.address.zipcode }}</li>
+    </ul>
+  </li>
+  <li>phone: {{ user.phone }}</li>
+  <li>website: {{ user.website }}</li>
+  <li>
+    company:
+    <ul>
+      <li>name: {{ user.company.name }}</li>
+      <li>catchPhrase: {{ user.company.catchPhrase }}</li>
+    </ul>
+  </li>
 </ul>
 
-
- 
+<!-- <mat-tree>
+    <mat-tree-node> parent node </mat-tree-node>
+    <mat-tree-node> -- child node1 </mat-tree-node>
+    <mat-tree-node> -- child node2 </mat-tree-node>
+  </mat-tree> -->

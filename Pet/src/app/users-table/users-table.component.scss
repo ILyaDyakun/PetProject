@@ -1,6 +1,7 @@
 table {
   width: 100%;
   cursor: pointer;
+  background-color: lightgray;
 }
 .container {
   position: relative;
@@ -19,9 +20,6 @@ table {
 
 .search {
   font-size: 20px;
-  font-weight: bold;
-  color: rgb(185, 23, 158);
-  border: 2px double grey;
   padding: 10px;
 }
 
@@ -37,5 +35,12 @@ table {
 }
 
 .row:hover {
-  background-color: rgb(240, 160, 104);
+  background-color: lighten(blue, 40);
+  color: dimgray;
+}
+
+.name, .email, .phone, .website, .username {
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
 }
