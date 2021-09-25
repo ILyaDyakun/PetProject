@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { UserComponent } from './user.component';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
-// import {MatTreeModule} from '@angular/material/tree'
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -14,7 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
     CommonModule,
     RouterModule,
     MatButtonModule,
-    // MatTreeModule
+    TranslateModule.forChild()
   ]
 })
 export class UserModule { }

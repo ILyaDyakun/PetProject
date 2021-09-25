@@ -6,7 +6,7 @@ import { User } from '../users-table/users.model';
 @Injectable()
 export class UsersService {
 
-  constructor(private http: HttpClient) { 
+  constructor(private http: HttpClient) {
   }
 
   public getUsers(): Observable<User[]> {

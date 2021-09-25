@@ -7,11 +7,9 @@ import { environment } from '../environments/environment';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit{
-  title(title: any) {
-    throw new Error('Method not implemented.');
-  }
-  constructor(private translateService: TranslateService) {}
+export class AppComponent implements OnInit {
+  constructor(private translateService: TranslateService) { }
+
   ngOnInit(): void {
     this.translateService.use(environment.defaultLocale);
   }

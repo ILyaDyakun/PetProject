@@ -1,19 +1,24 @@
 {
-	"HEADER": {
-		"TITLE": "My Project"
-	},
-	"TABLE": {
-		"SEARCH": "Search",
-		"NAME": "Name",
-		"EMAIL": "Email", 
-		"USERNAME": "Username", 
-		"PHONE": "Phone", 
-		"WEBSITE": "Website"
-	},
-	
-	"LANGUAGES": {
-		"EN": "English",
-		"UA": "Ukrainian",
-		"TITLE": "Language"
-	}
+  "HEADER": {
+    "TITLE": "My Project"
+  },
+  "TABLE": {
+    "SEARCH": "Search",
+    "NAME": "Name",
+    "EMAIL": "Email",
+    "USERNAME": "Username",
+    "PHONE": "Phone",
+    "WEBSITE": "Website"
+  },
+  "LANGUAGES": {
+    "EN": "English",
+    "UA": "Ukrainian",
+    "TITLE": "Language"
+  },
+  "FOOTER": {
+    "TITLE": "2021 Pet Project SoftServe"
+  },
+  "USER": {
+    "BACKBUTTON": "Back to Users List"
+  }
 }

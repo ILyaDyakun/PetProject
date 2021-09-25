@@ -5,9 +5,6 @@ import { MatSelectModule } from '@angular/material/select';
 import { TranslateModule } from '@ngx-translate/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
-
-
-
 @NgModule({
   declarations: [
     HeaderComponent

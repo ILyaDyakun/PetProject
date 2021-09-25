@@ -1,4 +1,4 @@
-<a mat-raised-button [routerLink]="['']" color="primary">Back to Users List</a>
+<a mat-raised-button [routerLink]="['']" color="primary">{{ "USER.BACKBUTTON" | translate }}</a>
 <ul class="user-list">
   <li>name: {{ user.name }}</li>
   <li>email: {{ user.email }}</li>
@@ -21,9 +21,3 @@
     </ul>
   </li>
 </ul>
-
-<!-- <mat-tree>
-    <mat-tree-node> parent node </mat-tree-node>
-    <mat-tree-node> -- child node1 </mat-tree-node>
-    <mat-tree-node> -- child node2 </mat-tree-node>
-  </mat-tree> -->

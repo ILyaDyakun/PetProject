@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 
 interface LanguageOption {
-  id:string;
+  id: string;
   title: string;
 }
 @Component({
@@ -19,11 +19,11 @@ export class HeaderComponent implements OnInit {
       id: 'en',
       title: 'English'
     },
-  {
-    id: 'ua',
-    title: 'Українська'
-  }
-];
+    {
+      id: 'ua',
+      title: 'Українська'
+    }
+  ];
   public selectedLanguage: string = environment.defaultLocale;
   constructor(private translateService: TranslateService) { }
 
